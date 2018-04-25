@@ -1,0 +1,106 @@
+{
+    "name": "ionic-hello-world",
+    "version": "0.0.0",
+    "author": "Ionic Framework",
+    "homepage": "http://ionicframework.com/",
+    "private": true,
+    "scripts": {
+        "clean": "ionic-app-scripts clean",
+        "build": "ionic-app-scripts build",
+        "lint": "ionic-app-scripts lint",
+        "ionic:build": "ionic-app-scripts build",
+        "ionic:serve": "ionic-app-scripts serve"
+    },
+    "dependencies": {
+        "@angular/common": "4.1.2",
+        "@angular/compiler": "4.1.2",
+        "@angular/compiler-cli": "4.1.2",
+        "@angular/core": "4.1.2",
+        "@angular/forms": "4.1.2",
+        "@angular/http": "4.1.2",
+        "@angular/platform-browser": "4.1.2",
+        "@angular/platform-browser-dynamic": "4.1.2",
+        "@ionic-native/camera": "^4.7.0",
+        "@ionic-native/core": "^3.14.0",
+        "@ionic-native/file": "^4.7.0",
+        "@ionic-native/file-path": "^4.7.0",
+        "@ionic-native/file-transfer": "^4.7.0",
+        "@ionic-native/image-picker": "^4.7.0",
+        "@ionic-native/splash-screen": "3.10.2",
+        "@ionic-native/status-bar": "3.10.2",
+        "@ionic-native/stripe": "^4.7.0",
+        "@ionic/storage": "2.0.1",
+        "com.synconset.imagepicker": "~2.1.8",
+        "cordova-android": "^6.4.0",
+        "cordova-ios": "^4.5.4",
+        "cordova-plugin-camera": "^2.4.1",
+        "cordova-plugin-compat": "^1.2.0",
+        "cordova-plugin-console": "^1.1.0",
+        "cordova-plugin-device": "^1.1.7",
+        "cordova-plugin-file": "^4.3.3",
+        "cordova-plugin-file-transfer": "^1.7.1",
+        "cordova-plugin-filepath": "^1.3.0",
+        "cordova-plugin-splashscreen": "^4.1.0",
+        "cordova-plugin-statusbar": "^2.4.2",
+        "cordova-plugin-stripe": "^1.5.3",
+        "cordova-plugin-telerik-imagepicker": "^2.1.10",
+        "cordova-plugin-whitelist": "git+https://github.com/apache/cordova-plugin-whitelist.git",
+        "form-data": "^2.3.2",
+        "ionic-angular": "3.3.0",
+        "ionic-plugin-keyboard": "^2.2.1",
+        "ionicons": "3.0.0",
+        "ng-email-validation": "^1.0.2",
+        "ng-file-upload": "^12.2.13",
+        "password-validator": "^4.1.0",
+        "platform": "^1.3.5",
+        "rxjs": "5.1.1",
+        "sw-toolbox": "3.6.0",
+        "zone.js": "0.8.11"
+    },
+    "devDependencies": {
+        "@ionic/app-scripts": "1.3.7",
+        "@ionic/cli-plugin-cordova": "1.4.1",
+        "@ionic/cli-plugin-ionic-angular": "1.3.2",
+        "ionic": "3.6.0",
+        "typescript": "2.3.3"
+    },
+    "cordovaPlugins": [
+        "cordova-plugin-whitelist",
+        "cordova-plugin-console",
+        "cordova-plugin-statusbar",
+        "cordova-plugin-device",
+        "cordova-plugin-splashscreen",
+        "ionic-plugin-keyboard"
+    ],
+    "cordovaPlatforms": [
+        "ios",
+        {
+            "platform": "ios",
+            "version": "",
+            "locator": "ios"
+        }
+    ],
+    "description": "ionic-welcome: An Ionic project",
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-console": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "ionic-plugin-keyboard": {},
+            "cordova-plugin-camera": {},
+            "cordova-plugin-file": {},
+            "cordova-plugin-file-transfer": {},
+            "cordova-plugin-filepath": {},
+            "com.synconset.imagepicker": {
+                "PHOTO_LIBRARY_USAGE_DESCRIPTION": "use for development"
+            },
+            "cordova-plugin-stripe": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
+}

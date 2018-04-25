@@ -1,0 +1,54 @@
+
+<ion-header>
+  
+    <ion-navbar color='fulldark'>
+  
+      <img ion-right src="assets/imgs/logo1.png" class="navbarLogo" />
+  
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding id="order">
+      
+      <h4>Order Management</h4>
+      <div class="listed">
+      <ion-list *ngFor="let order of orders; let i=index">
+      <ion-item-sliding #slidingIonItem class="item-thumbnail-left" ng-repeat="user of users">
+        <ion-item style="background-color: black">
+          <ion-thumbnail item-left>
+            <img src="assets/imgs/gold.png">
+          </ion-thumbnail>
+          <h2 class="email-title">Email: {{user.email}}</h2>
+          <div class="metas">
+            <div class="meta">
+              <span class="meta__title"></span>
+              <span class="meta__value">Username : {{user.firstname}}</span>
+                <span class="meta__value">{{user.lastname}}</span>
+              </div>
+              <div class="meta">
+                  <span class="meta__title"></span>
+                  <span class="meta__value">CreatedAt : {{user.createdAt}}</span>
+                </div>
+                <div class="meta">
+                    <span class="meta__title"></span>
+                    <span class="meta__value">Mobile Number :{{user.mobilenumber}}</span>
+                  </div>
+                  <div class="meta">
+                      <span class="meta__title"></span>
+                      <span class="meta__value">Verification Status :{{user.verified}}</span>
+                    </div>
+                    <div class="meta">
+                        <span class="meta__title"></span>
+                        <span class="meta__value">Role :  {{user.role}}</span>
+                      </div>
+          </div>
+        </ion-item>
+        <ion-item-options>
+          <button ion-button color="energy" (tap)="removeUser(user._id)">Delete</button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+      </div>
+  </ion-content>
+  
+  
+  

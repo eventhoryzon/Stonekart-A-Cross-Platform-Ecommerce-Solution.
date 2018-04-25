@@ -1,0 +1,59 @@
+<!--
+  Generated template for the CartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+      <ion-navbar color='fulldark'>
+    
+        <img ion-right src="assets/imgs/logo1.png" class="navbarLogo" />
+    
+      </ion-navbar>
+    </ion-header>
+    <ion-content padding id="manageseller">
+        
+        <h4>Employee Management</h4>
+        <div class="listed">
+        <ion-list *ngFor="let seller of sellers; let i=index">
+        <ion-item-sliding #slidingIonItem class="item-thumbnail-left" ng-repeat="seller of sellers">
+          <ion-item style="background-color: black">
+            <ion-thumbnail item-left>
+              <img src="assets/imgs/gold.png">
+            </ion-thumbnail>
+            <h2 class="email-title">Email: {{seller.email}}</h2>
+            <div class="metas">
+              <div class="meta">
+                <span class="meta__title"></span>
+                <span class="meta__value">Username : {{seller.firstname}}</span>
+                  <span class="meta__value">{{seller.lastname}}</span>
+                </div>
+                <div class="meta">
+                    <span class="meta__title"></span>
+                    <span class="meta__value">CreatedAt : {{seller.createdAt}}</span>
+                  </div>
+                  <div class="meta">
+                      <span class="meta__title"></span>
+                      <span class="meta__value">Mobile Number :{{seller.mobilenumber}}</span>
+                    </div>
+                    <div class="meta">
+                        <span class="meta__title"></span>
+                        <span class="meta__value">Verification Status :{{seller.verified}}</span>
+                      </div>
+                      <div class="meta">
+                          <span class="meta__title"></span>
+                          <span class="meta__value">Role :  {{seller.role}}</span>
+                        </div>
+            </div>
+          </ion-item>
+          <ion-item-options>
+            <button ion-button color="energy" (tap)="removeUser(user._id)">Delete</button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+        </div>
+    </ion-content>
+    
+    
+    

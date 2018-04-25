@@ -1,0 +1,69 @@
+.navbarLogo{
+    height: 40px;
+    float:left;
+    margin-left:10px;
+}
+page-home {
+    #home{
+    background: color($colors,fulldark);
+    h5{
+        font-size: 15px;
+        margin-top:10px;
+        color: ghostwhite;
+        text-align: center;
+    }
+    .spinner-container {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      color: white;
+  }
+    .con ion-icon {
+        font-size: 2.9rem;
+      }
+    .con {
+        max-height: 2.9rem;
+      }
+    h4{
+        font-size: 20px;
+        margin-top:0px;
+        color: #f2b632;
+        text-align: center;
+    }
+
+      h6{
+        font-size: 15px;
+        margin-top:70px;
+        color: #f2b632;
+        text-align: center;
+    }
+    .container {
+        text-align: center;
+    }
+    .marginTop{
+        margin-top:150px;
+    }
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+}
+}

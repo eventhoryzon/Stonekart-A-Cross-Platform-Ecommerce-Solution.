@@ -1,0 +1,48 @@
+
+.navbarLogo{
+    height: 30px;
+    float:left;
+    margin-left:0px;
+}
+page-messages {
+    #messageadmin{
+    background: color($colors,black);
+    h4{
+        font-size: 20px;
+        margin-top:0px;
+        color: #f2b632;
+        text-align: center;
+    }
+    .metas{
+      font-size : 10px;
+      color: #f2b632;
+      text-align: left;
+
+    }
+    .listed{
+      background-color: color($colors,black);
+      }
+    .metavalue{
+        font-size : 5px;
+        color: #f2b632;
+        text-align: left;
+  
+      }
+      .email-title{
+        font-size : 15px;
+        color: #f2b632;
+        text-align: left;
+  
+      }
+
+      
+    .container {
+        text-align: center;
+    }
+    .marginTop{
+        margin-top:150px;
+    }
+  
+
+}
+}

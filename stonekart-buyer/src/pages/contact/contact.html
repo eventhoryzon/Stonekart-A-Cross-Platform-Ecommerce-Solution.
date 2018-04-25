@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar color='fulldark'>
+     <img ion-right src="assets/imgs/logo2.png" class="navbarLogo" />
+  </ion-navbar>
+
+   
+</ion-header>
+ 
+<ion-content style="background-color: black">
+ 
+  <form [formGroup]="messageform" (submit)="doContact()">
+    
+      <ion-item style="color: gold;  background-color:black;" >
+       <ion-label stacked>Username</ion-label>
+       <ion-input  type="text" formControlName="username" placeholder=" UserName" ></ion-input>
+     </ion-item>
+     <ion-item *ngIf="!messageform.controls.username.valid  && (messageform.controls.username.dirty || submitAttempt)">
+        <p>Please enter a valid username.</p>
+    </ion-item>
+     <ion-item style="color: gold;  background-color:black;">
+        <ion-label stacked>Email</ion-label>
+        <ion-input  type="text" formControlName="email" placeholder=" Email" ></ion-input>
+      </ion-item>
+      <ion-item *ngIf="!messageform.controls.email.valid  && (messageform.controls.email.dirty || submitAttempt)">
+          <p>Please enter a valid email.</p>
+      </ion-item>
+      <ion-item style="color: gold;  background-color:black;">
+          <ion-label stacked>Message</ion-label>
+          <ion-input  type="text" formControlName="message" placeholder="Message:" ></ion-input>
+        </ion-item>
+        <ion-item *ngIf="!messageform.controls.message.valid  && (messageform.controls.message.dirty || submitAttempt)">
+            <p>Please enter a valid message.</p>
+        </ion-item>
+        <button ion-button block color="energy" ion-button block type="submit" [disabled]="!messageform.valid">
+            Send
+          </button>
+  </form>
+  <ion-list style="background-color: black">
+    <ion-list-header style="color: gold;  background-color:black;">Twitter,Facebook,Instagram</ion-list-header>
+    <ion-item style="color: gold;  background-color:black;">
+      <ion-icon name="logo-twitter" style="color: gold"></ion-icon>
+      @stonekart
+    </ion-item>
+    <ion-item style="color: gold;  background-color:black;">
+      <ion-icon name="logo-facebook" style="color: gold"></ion-icon>
+      @stonekartfacebook
+    </ion-item>
+    <ion-item style="color: gold;  background-color:black;">
+      <ion-icon name="logo-instagram" style="color: gold"></ion-icon>
+      @stonekartinsta
+    </ion-item>
+  </ion-list>
+</ion-content>

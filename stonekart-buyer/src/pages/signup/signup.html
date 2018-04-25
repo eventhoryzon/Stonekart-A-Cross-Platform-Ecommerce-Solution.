@@ -1,0 +1,52 @@
+
+<ion-content id ="signup" padding>
+  <img src="assets/imgs/logo1.png" class="logo"/>
+    <h3>Register Here</h3>
+  <form [formGroup]="userregform" (submit)="doSignup()">
+     <ion-item>
+      <ion-label stacked>Firstname</ion-label>
+      <ion-input  type="text" formControlName="firstname" placeholder="First Name" ></ion-input>
+    </ion-item>
+         <ion-item *ngIf="!userregform.controls.firstname.valid  && (userregform.controls.firstname.dirty || submitAttempt)">
+                <p>Please enter a valid firstname.</p>
+            </ion-item>
+<ion-item>
+      <ion-label stacked>Lastname</ion-label>
+      <ion-input  formControlName="lastname" type="text" placeholder="Last Name" ></ion-input>
+    </ion-item> 
+    <ion-item *ngIf="!userregform.controls.lastname.valid  && (userregform.controls.lastname.dirty || submitAttempt)">
+                <p>Please enter a valid lastname.</p>
+            </ion-item>
+    <ion-item>
+      <ion-label stacked>Username/Email</ion-label>
+      <ion-input  type="email" formControlName="email" placeholder="Your Email" ></ion-input>
+     <ion-item *ngIf="!userregform.controls.email.valid  && (userregform.controls.email.dirty || submitAttempt)">
+                <p>Please enter a valid User Email.</p>
+            </ion-item>
+    </ion-item>
+             <ion-item>
+      <ion-label stacked>Mobile Number</ion-label>
+      <ion-input  type="text" formControlName="mobilenumber" placeholder="Your Mobile Number" ></ion-input>
+     <ion-item *ngIf="!userregform.controls.mobilenumber.valid  && (userregform.controls.mobilenumber.dirty || submitAttempt)">
+                <p>Please enter a valid 10 Digit Mobile Number.</p>
+            </ion-item>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input   type="password" formControlName="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="!userregform.controls.password.valid  && (userregform.controls.password.dirty || submitAttempt)">
+                <p>Please enter a valid Password.</p>
+            </ion-item>
+       <ion-item>
+      <ion-label stacked>Confirmpassword</ion-label>
+      <ion-input  formControlName="confirmpassword" type="password" placeholder="Confirm Password"></ion-input>
+    </ion-item> 
+    <ion-item *ngIf="!userregform.controls.confirmpassword.valid  && (userregform.controls.confirmpassword.dirty || submitAttempt)">
+                <p>Passwords do not match</p>
+            </ion-item>
+    <button ion-button block color="energy" ion-button block type="submit" [disabled]="!userregform.valid">
+      Register
+    </button>
+  </form>
+</ion-content>

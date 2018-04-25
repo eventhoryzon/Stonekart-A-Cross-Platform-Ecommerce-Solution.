@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar color='fulldark'>
+     <img src="assets/imgs/logo1.png" class="navbarLogo"/>
+   <!-- <ion-icon side="right" name="cart" color="energy"></ion-icon>   -->
+      <ion-searchbar *ngIf="isOn" [(ngModel)]="searchTerm"  [formControl]="searchControl" (ionInput)="setFilteredItems()"></ion-searchbar>
+    <ion-buttons end>
+      <button  (click)="toggleDetails()" style="background: #1a1a1a; font-size: 2.0rem"><ion-icon name="search" color="energy" ></ion-icon></button>
+    </ion-buttons>
+    <div *ngIf="searching" class="spinner-container">
+      <ion-spinner></ion-spinner>
+  </div>
+  </ion-navbar>
+</ion-header>
+<ion-content id ="home" padding>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)" style="background-color:energy"></ion-refresher>
+  <h4>Welcome to Stonekart</h4>
+
+  <div class="container">
+  <div class="row" *ngFor="let item of storeItems; let i=index">
+ <ion-card style="background-color: black">
+    
+  <ion-item style="background-color: black">
+    <h3 style="text-align: center; color:white">{{item.title}}</h3>
+   <!-- <h3>{{i+1}}</h3> -->
+    <!-- <h3>{{item._id}}</h3> -->
+    <!-- <h3>{{item.stock}}</h3>
+    <h3>{{item.categories}}</h3> -->
+    
+  </ion-item>
+  <!-- <img src="http://192.168.1.68:3333/{{item.originalname}}"> -->
+<!-- <img src="http://139.153.62.240:3333/{{item.originalname}}"> -->
+<img src ="http://127.0.0.1:3333/{{item.originalname}}">
+  <ion-card-content>
+    <p style="text-align:center; color:white">
+   {{item.description}}
+  </ion-card-content>
+  <ion-row>
+      <ion-col center text-left>
+          <button ion-button color="energy">
+            Price:{{item.price}}£ 
+          </button>
+        </ion-col>
+    <ion-col center text-right>
+      <button ion-button color="fulldark" (click)="addItemInCart(item._id)">
+        Add to Cart-
+        <ion-icon name="cart" color="energy"></ion-icon>
+      </button>
+    </ion-col>
+    
+ 
+  </ion-row>
+</ion-card>
+</div>
+</div>
+</ion-content>

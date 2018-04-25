@@ -1,0 +1,26 @@
+
+<ion-header>
+    <ion-navbar color='fulldark'>
+       <img ion-right src="assets/imgs/logo2.png" class="navbarLogo" />
+    </ion-navbar>
+  
+     
+  </ion-header>
+
+<ion-content padding style="background-color: black"> 
+    <ion-item style="color: gold;  background-color:black;" >
+    <ion-input [(ngModel)]="cardinfo.number" placeholder="card number"></ion-input>
+    </ion-item>
+    <ion-item style="color: gold;  background-color:black;" >
+    <ion-input [(ngModel)]="cardinfo.expMonth" placeholder="expiry month"></ion-input>
+    </ion-item>
+    <ion-item style="color: gold;  background-color:black;" >
+    <ion-input [(ngModel)]="cardinfo.expYear" placeholder="expiry year"></ion-input>
+    </ion-item>
+    <ion-item style="color: gold;  background-color:black;" >
+    <ion-input [(ngModel)]="cardinfo.cvc" placeholder="cvc"></ion-input>
+    </ion-item>
+   
+    <button ion-button block color="energy" (click)="pay()">Pay Now</button>
+
+</ion-content>

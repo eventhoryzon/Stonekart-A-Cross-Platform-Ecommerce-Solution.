@@ -1,0 +1,44 @@
+<!--
+  Generated template for the CartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+      <ion-navbar color='fulldark'>
+    
+        <img ion-right src="assets/imgs/logo1.png" class="navbarLogo" />
+    
+      </ion-navbar>
+    </ion-header>
+    <ion-content padding id="prodadmin">
+        
+        <h4>All Products</h4>
+        <ion-list  *ngFor="let item of storeItems; let i=index">
+        <ion-item-sliding #slidingIonItem class="item-thumbnail-left" ng-repeat="item in storeItems">
+          <ion-item style="background-color : black">
+            <ion-thumbnail item-left>
+              <img [src]= image+item.originalname>
+            </ion-thumbnail>
+            <h2 
+            style="font-size : 15px;
+            color: #f2b632;
+            text-align: left;">
+            {{item.title}}</h2>
+            <div class="metas">
+              <div class="meta">
+                <span class="meta__title"></span>
+                <span class="meta__value">{{item.price}}.00 £</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item-options>
+            <button ion-button color="energy" (tap)="removeProduct(item._id)">Delete</button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    </ion-content>
+    
+    
+    

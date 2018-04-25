@@ -1,0 +1,44 @@
+
+<ion-header>
+  <ion-navbar color='fulldark'>
+     <img ion-right src="assets/imgs/logo2.png" class="navbarLogo" />
+  </ion-navbar>
+
+   
+</ion-header>
+<ion-content id ="address" padding>
+    <h4>Enter the Details to Complete Order</h4>
+  <form [formGroup]="orderform" (submit)="sendOrder()">
+     <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input  type="text" formControlName="name" placeholder="Name" ></ion-input>
+    </ion-item>
+         <ion-item *ngIf="!orderform.controls.name.valid  && (orderform.controls.name.dirty || submitAttempt)">
+                <p>Please enter a valid name.</p>
+            </ion-item>
+    <ion-item>
+      <ion-label stacked>Username/Email</ion-label>
+      <ion-input  type="email" formControlName="email" placeholder="Your Email" ></ion-input>
+     <ion-item *ngIf="!orderform.controls.email.valid  && (orderform.controls.email.dirty || submitAttempt)">
+                <p>Please enter a valid User Email.</p>
+            </ion-item>
+    </ion-item>
+             <ion-item>
+      <ion-label stacked>Mobile Number</ion-label>
+      <ion-input  type="text" formControlName="mobilenumber" placeholder="Your Mobile Number" ></ion-input>
+     <ion-item *ngIf="!orderform.controls.mobilenumber.valid  && (orderform.controls.mobilenumber.dirty || submitAttempt)">
+                <p>Please enter a valid 10 Digit Mobile Number.</p>
+            </ion-item>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>shippingAddress</ion-label>
+      <ion-input  type="text" formControlName="shippingAddress" placeholder="shippingAddress" ></ion-input>
+    </ion-item>
+         <ion-item *ngIf="!orderform.controls.shippingAddress.valid  && (orderform.controls.shippingAddress.dirty || submitAttempt)">
+                <p>Please enter a valid shippingAddress.</p>
+            </ion-item>
+    <button ion-button block color="energy" ion-button block type="submit" [disabled]="!orderform.valid">
+      Order Now Pay Cash On Delivery 
+    </button>
+  </form>
+</ion-content>

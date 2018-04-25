@@ -1,0 +1,24 @@
+
+
+
+<ion-content padding id ="login">
+<img src="assets/imgs/logo2.png" class="logo"/>
+  <h2> Welcome to Stonekart </h2>
+
+ <h3>Already a member</h3>
+  <form (submit)="doLogin()">0
+    <ion-item>
+      <ion-label stacked>Username/Email</ion-label>
+      <ion-input [(ngModel)]="loginData.email" name="email" type="email" placeholder="Username/Email" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input [(ngModel)]="loginData.password" name="password" type="password" placeholder="Password"></ion-input>
+    </ion-item>
+   <button id="b1" ion-button block color="energy" (click)="doLogin()">Login</button>
+   <!-- <button  ion-button="energy" click="skip()">Skip</button> -->
+  </form>
+
+  <button ion-button block color="energy"  ion-button block clear (click)="register()">
+    Dont have an account? Register Now
+  </button>
