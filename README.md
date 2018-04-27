@@ -30,7 +30,7 @@ Stonekart Server
 • MEAN stack is mobile centric i.e. Angular runs equally well on desktops, laptops, smartphones, tables and even smart TV’s.
 ```markdown
  ## M E A N - stands for MongoDB, ExpressJS, Angular, and NodeJS.
- 
+ ![alt text](https://i.imgur.com/MDtbpDM.png)
 # MongoDB - NoSQL Database.
 ## ExpressJS - Modelling Framework to create NodeJS Server Side Logic.
 ### AngularJS - FrontEnd UI Framework to create User-Friendly UI.
@@ -61,5 +61,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-![alt text](https://i.imgur.com/MDtbpDM.png)
+
 
