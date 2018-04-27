@@ -2,7 +2,6 @@
 
 ## Welcome to Stonekart
 
-Problem & Aim :
 Stone companies and freelance stonemasons sell their products directly to the consumer that is the offline instore method. Stonekart provides the solution for buying these exclusive products in a few clicks. The aim of this hybrid application built on Angular(frontend) is to provide a multivendor ecommerce functionality and help to provide interfaces for two kinds of users i.e. A buyer and a stonemason / stone Seller company. The use of the ionic framework that includes apache Cordova makes it easy to access native API’s on each platform.
 
 ### Marketplace Apps and Integartions (Frameworks/Modules)
