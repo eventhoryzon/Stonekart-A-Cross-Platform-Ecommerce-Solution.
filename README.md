@@ -1,11 +1,10 @@
 [![build status](https://travis-ci.org/he77y/Stonekart-A-Cross-Platform-Ecommerce-Solution.svg)](https://travis-ci.org/profile/he77y/Stonekart-A-Cross-Platform-Ecommerce-Solution.)
-x
-x
+
 ## Welcome to Stonekart
 
 Stone companies and freelance stonemasons sell their products directly to the consumer that is the offline instore method. Stonekart provides the solution for buying these exclusive products in a few clicks. The aim of this hybrid application built on Angular(frontend) is to provide a multivendor ecommerce functionality and help to provide interfaces for two kinds of users i.e. A buyer and a stonemason / stone Seller company. The use of the ionic framework that includes apache Cordova makes it easy to access native API’s on each platform.
 
-![alt text](https://i.imgur.com/hInyXnK.png)
+![alt text](https://i.imgur.com/4FKwhAq.png)
 
 ### Marketplace Apps and Integartions (Frameworks/Modules)
 
@@ -39,7 +38,7 @@ Stonekart Server
 ### AngularJS - FrontEnd UI Framework to create User-Friendly UI.
 #### NodeJS - Backend Server that routes the data making it availaible to the frontend logic using RESTFul Web Services.
 ```
- ![alt text](https://i.imgur.com/MDtbpDM.png)
+ ![alt text](https://i.imgur.com/kSUaXFU.png)
 
 ## License
 
