@@ -28,30 +28,17 @@ MEAN stands for MongoDB, ExpressJS, Angular, and NodeJS.
 • Emphasizing on client side views with the courtesy of Angular where it interacts with the NodeJS server. Moving from page-centric view of the application to one that is component-oriented. 
 • MEAN stack is mobile centric i.e. Angular runs equally well on desktops, laptops, smartphones, tables and even smart TV’s.
 ```markdown
-Syntax highlighted code block
-
+ ## M E A N
 # MongoDB
 ## ExpressJS
 ### AngularJS
 #### NodeJS
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### By Shazib Ali Gesawat
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/he77y/Stonekart-A-Cross-Platform-Ecommerce-Solution./settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with the code? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/he77y) and we’ll help you sort it out.
