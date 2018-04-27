@@ -23,25 +23,19 @@ Stonekart Seller
 • Invoice generator.
 • Secured buyer chatting functionality
 
-MEAN stands for MongoDB, ExpressJS, Angular, and NodeJS.
+Stonekart Server
 • As compared to traditional web-serving techniques where each connection(request) generates a new thread, using large amounts of the system RAM and eventually maxing it out , NodeJS operates on a single thread, using non-blocking I/O calls, allowing it to support thousands of concurrent connections(held in the event loop).
 • MongoDB being easily scalable and schema less reduces the complexity of transformation logic because it releases JSON • Objects natively making writing of RESTful web services easy. • Express handles server-side routing and page-generation and I/O calls to and from the database.
 • Emphasizing on client side views with the courtesy of Angular where it interacts with the NodeJS server. Moving from page-centric view of the application to one that is component-oriented. 
 • MEAN stack is mobile centric i.e. Angular runs equally well on desktops, laptops, smartphones, tables and even smart TV’s.
 ```markdown
- ## M E A N
-# MongoDB
-## ExpressJS
-### AngularJS
-#### NodeJS
+ ## M E A N - stands for MongoDB, ExpressJS, Angular, and NodeJS.
+ 
+# MongoDB - NoSQL Database.
+## ExpressJS - Modelling Framework to create NodeJS Server Side Logic.
+### AngularJS - FrontEnd UI Framework to create User-Friendly UI.
+#### NodeJS - Backend Server that routes the data making it availaible to the frontend logic using RESTFul Web Services.
 
-## Installation
-
-With [npm](https://npmjs.org) do:
-
-```bash
-npm install -----COMINGSOON-----
-```
 
 ## License
 
