@@ -1,3 +1,5 @@
+[![build status](https://travis-ci.org/he77y/Stonekart-A-Cross-Platform-Ecommerce-Solution.svg)](https://travis-ci.org/profile/he77y/Stonekart-A-Cross-Platform-Ecommerce-Solution.)
+
 ## Welcome to Stonekart
 
 Problem & Aim :
