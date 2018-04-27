@@ -1,8 +1,7 @@
-## Welcome to GitHub Pages
+## Welcome to Stonekart
 
-You can use the [editor on GitHub](https://github.com/he77y/Stonekart-A-Cross-Platform-Ecommerce-Solution./edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Problem & Aim :
+Stone companies and freelance stonemasons sell their products directly to the consumer that is the offline instore method. Stonekart provides the solution for buying these exclusive products in a few clicks. The aim of this hybrid application built on Angular(frontend) is to provide a multivendor ecommerce functionality and help to provide interfaces for two kinds of users i.e. A buyer and a stonemason / stone Seller company. The use of the ionic framework that includes apache Cordova makes it easy to access native API’s on each platform.
 
 ### Markdown
 
