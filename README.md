@@ -3,7 +3,7 @@
 Problem & Aim :
 Stone companies and freelance stonemasons sell their products directly to the consumer that is the offline instore method. Stonekart provides the solution for buying these exclusive products in a few clicks. The aim of this hybrid application built on Angular(frontend) is to provide a multivendor ecommerce functionality and help to provide interfaces for two kinds of users i.e. A buyer and a stonemason / stone Seller company. The use of the ionic framework that includes apache Cordova makes it easy to access native API’s on each platform.
 
-### Marketplcae Infrastructure.
+### Marketplace Apps and Integartions (Frameworks/Modules)
 
 Stonekart Buyer
 • A secured login and registration.
@@ -30,9 +30,10 @@ MEAN stands for MongoDB, ExpressJS, Angular, and NodeJS.
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# MongoDB
+## ExpressJS
+### AngularJS
+#### NodeJS
 
 - Bulleted
 - List
